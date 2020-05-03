@@ -1,0 +1,30 @@
+.Request{
+
+    input {
+        display: block;
+    }
+
+    label {
+        padding: 0.2rem 0.4rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
+    input[type='radio'] {
+        display: none;
+    }
+    /* if we have a input of type radio that is checked and is next to a label then backgorund color red */
+    input[type='radio']:checked + label
+     {
+        background-color: #eee;
+    }
+
+    textarea {
+        display: block;
+        margin: 1rem;
+    }
+
+    button {
+        display: block;
+    }
+}

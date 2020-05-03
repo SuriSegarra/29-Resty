@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Request.css';
 
 const Request = ({ url, onUrlChange, body, onBodyChange, onMethodChange, onSubmit }) => (
-  <form onSubmit={onSubmit}>
+  <form className={styles.Request} onSubmit={onSubmit}>
     <input type='text' value={url} onChange={onUrlChange} />
 
     <input id='GET' type='radio' name='method' value='GET' onChange={onMethodChange}></input>
@@ -19,9 +20,6 @@ const Request = ({ url, onUrlChange, body, onBodyChange, onMethodChange, onSubmi
 
     <input id='DELETE' type='radio' name='method' value='DELETE' onChange={onMethodChange}></input>
     <label htmlFor='DELETE'>DELETE</label>
-
-    <input id='POST' type='radio' name='method' value='POST' onChange={onMethodChange}></input>
-    <label htmlFor='POST'>POST</label>
 
     <textarea value={body} onChange={onBodyChange}> </textarea>
     <button>Go!</button>
