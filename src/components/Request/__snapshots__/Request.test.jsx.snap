@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request matches Request jsx 1`] = `
+<form
+  className="Request"
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="https://hey-arnold-api.herokuapp.com/api/v1/characters"
+  />
+  <input
+    id="GET"
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="GET"
+  />
+  <label
+    htmlFor="GET"
+  >
+    GET
+  </label>
+  <input
+    id="POST"
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="POST"
+  />
+  <label
+    htmlFor="POST"
+  >
+    POST
+  </label>
+  <input
+    id="PUT"
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="PUT"
+  />
+  <label
+    htmlFor="PUT"
+  >
+    PUT
+  </label>
+  <input
+    id="PATCH"
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="PATCH"
+  />
+  <label
+    htmlFor="PATCH"
+  >
+    PATCH
+  </label>
+  <input
+    id="DELETE"
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="DELETE"
+  />
+  <label
+    htmlFor="DELETE"
+  >
+    DELETE
+  </label>
+  <textarea
+    onChange={[Function]}
+    value="json body"
+  >
+     
+  </textarea>
+  <button>
+    Go!
+  </button>
+</form>
+`;
