@@ -1,40 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Request.css';
 
-const Request = ({ url, onUrlChange, body, onBodyChange, onMethodChange, onSubmit }) => (
-  <form className={styles.Request} onSubmit={onSubmit}>
-    <input type='text' value={url} onChange={onUrlChange} />
+const Request  = ({ url, method, body, onChange, onSubmit }) => (
+  <form onSubmit={onSubmit}>
+    <input type='text' name='url' value={url} onChange={onChange} />
+    
+    <label>
+      <input type='radio' name='method' value='POST' checked={method === 'POST'} onChange={onChange}/>
+      POST
+    </label>
 
-    <input id='GET' type='radio' name='method' value='GET' onChange={onMethodChange}></input>
-    <label htmlFor='GET'>GET</label>
+    <label>
+      <input type='radio' name='method' value='GET' checked={method === 'GET'} onChange={onChange}/>
+      GET
+    </label>
 
-    <input id='POST' type='radio' name='method' value='POST' onChange={onMethodChange}></input>
-    <label htmlFor='POST'>POST</label>
+    <label>
+      <input type='radio' name='method' value='PUT' checked={method === 'PUT'} onChange={onChange}/>
+      PUT
+    </label>
 
-    <input id='PUT' type='radio' name='method' value='PUT' onChange={onMethodChange}></input>
-    <label htmlFor='PUT'>PUT</label>
+    <label>
+      <input type='radio' name='method' value='PATCH' checked={method === 'PATCH'} onChange={onChange}/>
+      PATCH
+    </label>
 
-    <input id='PATCH' type='radio' name='method' value='PATCH' onChange={onMethodChange}></input>
-    <label htmlFor='PATCH'>PATCH</label>
+    <label>
+      <input type='radio' name='method' value='DELETE' checked={method === 'DELETE'} onChange={onChange}/>
+      DELETE
+    </label>
 
-    <input id='DELETE' type='radio' name='method' value='DELETE' onChange={onMethodChange}></input>
-    <label htmlFor='DELETE'>DELETE</label>
-
-    <textarea value={body} onChange={onBodyChange}> </textarea>
-    <button>Go!</button>
+    <textarea name='body' value={body} onChange={onChange}> </textarea>
   </form>
 );
 
 Request.propTypes = {
   url: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
-  body: PropTypes.object.isRequired,
-  onUrlChange: PropTypes.func.isRequired,
-  onMethodChange: PropTypes.func.isRequired,
-  onBodyChange: PropTypes.func.isRequired,
+  body: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired
-
 };
 
 export default Request;
+
