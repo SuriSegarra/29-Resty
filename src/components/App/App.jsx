@@ -1,13 +1,10 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Request from '../Request/Request';
 import './App.css';
+import Resty from '../../Container/Resty';
 
 export default function App() {
   return (
-    <div className='container'>
-      <Header/>
-      <Request/>
-    </div>
+    <Resty/>
   );
 }
+ 

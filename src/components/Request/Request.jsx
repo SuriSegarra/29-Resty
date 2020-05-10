@@ -5,7 +5,7 @@ const Request  = ({ url, method, body, onChange, onSubmit }) => (
   <form onSubmit={onSubmit}>
     <input type='text' name='url' value={url} onChange={onChange} />
     
-    <label>
+    <label> 
       <input type='radio' name='method' value='POST' checked={method === 'POST'} onChange={onChange}/>
       POST
     </label>
@@ -31,6 +31,7 @@ const Request  = ({ url, method, body, onChange, onSubmit }) => (
     </label>
 
     <textarea name='body' value={body} onChange={onChange}> </textarea>
+    <button>Go!</button>
   </form>
 );
 
