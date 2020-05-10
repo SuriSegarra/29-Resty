@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import Request from '../components/Request';
+import Request from '../components/Request/Request';
+import { makeRequest } from '../services/makeRequest';
+import Response from '../components/Response/Response';
 
 const Resty = () => {
   const [url, setUrl] = useState('');
   const [method, setMethod] = useState('GET');
   const [body, setBody] = useState('');
+  const [response, setResponse] = useState({});
   
   // const handleUrlChange = ({ target }) => {
   //   setUrl(target.value);
@@ -26,17 +29,21 @@ const Resty = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('you should make a request to', url, method, body);
+    makeRequest(url, method, body)
+      .then(json => setResponse(json));
   };
 
   return (
- 
-    <Request 
-      url={url} 
-      method={method} 
-      body={body} 
-      onChange={handleChange}
-      onSubmit={handleSubmit}/>
+    <>
+      <Request 
+        url={url} 
+        method={method} 
+        body={body} 
+        onChange={handleChange}
+        onSubmit={handleSubmit}/>
+      <Response
+        response={response}/>
+    </>
   );
 };
 
