@@ -12,7 +12,6 @@ const Resty = () => {
   const [body, setBody] = useState('');
   const [response, setResponse] = useState({});
   const [history, setHistory] = useState(getHistory());
-  
   //whenecer history changes, update history of local storage
   useEffect(() => {
     localStorage.setItem('history', JSON.stringify(history));

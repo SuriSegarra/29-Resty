@@ -2,6 +2,7 @@
 
 exports[`Request concomponent matches a snapshot of Request.jsx 1`] = `
 <form
+  className="Request"
   onSubmit={[Function]}
 >
   <input
@@ -10,81 +11,20 @@ exports[`Request concomponent matches a snapshot of Request.jsx 1`] = `
     type="text"
     value="test url"
   />
-  <label>
-    <input
-      checked={false}
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="POST"
-    />
+  <input
+    checked={false}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="POST"
+  />
+  <label
+    htmlFor="POSt"
+  >
     POST
   </label>
-  <label>
-    <input
-      checked={true}
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="GET"
-    />
-    GET
-  </label>
-  <label>
-    <input
-      checked={false}
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="PUT"
-    />
-    PUT
-  </label>
-  <label>
-    <input
-      checked={false}
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="PATCH"
-    />
-    PATCH
-  </label>
-  <label>
-    <input
-      checked={false}
-      name="method"
-      onChange={[Function]}
-      type="radio"
-      value="DELETE"
-    />
-    DELETE
-  </label>
-  <textarea
-    name="body"
-    onChange={[Function]}
-    value="JSON body"
-  >
-     
-  </textarea>
-  <button>
-    Go!
-  </button>
-</form>
-`;
-
-exports[`Request matches Request jsx 1`] = `
-<form
-  className="Request"
-  onSubmit={[Function]}
->
   <input
-    onChange={[Function]}
-    type="text"
-    value="https://hey-arnold-api.herokuapp.com/api/v1/characters"
-  />
-  <input
-    id="GET"
+    checked={true}
     name="method"
     onChange={[Function]}
     type="radio"
@@ -93,22 +33,10 @@ exports[`Request matches Request jsx 1`] = `
   <label
     htmlFor="GET"
   >
-    GET
+    GET 
   </label>
   <input
-    id="POST"
-    name="method"
-    onChange={[Function]}
-    type="radio"
-    value="POST"
-  />
-  <label
-    htmlFor="POST"
-  >
-    POST
-  </label>
-  <input
-    id="PUT"
+    checked={false}
     name="method"
     onChange={[Function]}
     type="radio"
@@ -120,7 +48,7 @@ exports[`Request matches Request jsx 1`] = `
     PUT
   </label>
   <input
-    id="PATCH"
+    checked={false}
     name="method"
     onChange={[Function]}
     type="radio"
@@ -132,7 +60,7 @@ exports[`Request matches Request jsx 1`] = `
     PATCH
   </label>
   <input
-    id="DELETE"
+    checked={false}
     name="method"
     onChange={[Function]}
     type="radio"
@@ -144,8 +72,9 @@ exports[`Request matches Request jsx 1`] = `
     DELETE
   </label>
   <textarea
+    name="body"
     onChange={[Function]}
-    value="json body"
+    value="JSON body"
   >
      
   </textarea>
