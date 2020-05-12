@@ -1,0 +1,54 @@
+.Request {
+
+    input[type='text'] {
+        position: relative;
+        bottom: 695px;
+        left: 28%;
+        width: 50%;
+        height:20px;
+        /* margin: 1rem 0; */
+    }
+
+    input[type='radio'] {
+        background-color: initial;
+        -webkit-appearance: radio;
+        box-sizing: border-box;
+        margin: 3px 0.5ex;
+        padding: initial;
+        border: initial;
+        position: relative;
+        bottom: 650px;
+        right: 20%;
+        
+    }
+    input[type="radio"]:checked + label {
+        background-color: #2d5986;
+        color: white;
+        
+      }
+label {
+    padding: .25em 1em;
+    margin: 0.5rem 0rem;
+    cursor: pointer;
+    bottom: 650px;
+    position: relative;
+    right: 20%;
+    
+    }
+    textarea {
+        position: relative;
+        bottom: 580px;
+        left: 29%;
+        display: block;
+        height: 10em;
+        width: 40%;
+    }
+    
+    button {
+        position: relative;
+        bottom: 835px;
+        left: 80%;
+        width: 30px;
+        height: 20px;
+    }
+}

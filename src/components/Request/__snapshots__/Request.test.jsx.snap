@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request concomponent matches a snapshot of Request.jsx 1`] = `
+<form
+  className="Request"
+  onSubmit={[Function]}
+>
+  <input
+    name="url"
+    onChange={[Function]}
+    type="text"
+    value="test url"
+  />
+  <input
+    checked={false}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="POST"
+  />
+  <label
+    htmlFor="POSt"
+  >
+    POST
+  </label>
+  <input
+    checked={true}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="GET"
+  />
+  <label
+    htmlFor="GET"
+  >
+    GET 
+  </label>
+  <input
+    checked={false}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="PUT"
+  />
+  <label
+    htmlFor="PUT"
+  >
+    PUT
+  </label>
+  <input
+    checked={false}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="PATCH"
+  />
+  <label
+    htmlFor="PATCH"
+  >
+    PATCH
+  </label>
+  <input
+    checked={false}
+    name="method"
+    onChange={[Function]}
+    type="radio"
+    value="DELETE"
+  />
+  <label
+    htmlFor="DELETE"
+  >
+    DELETE
+  </label>
+  <textarea
+    name="body"
+    onChange={[Function]}
+    value="JSON body"
+  >
+     
+  </textarea>
+  <button>
+    Go!
+  </button>
+</form>
+`;

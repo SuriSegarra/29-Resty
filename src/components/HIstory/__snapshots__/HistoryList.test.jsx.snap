@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList renders Characters 1`] = `
+<Fragment>
+  <h2>
+    History
+  </h2>
+  <aside
+    className="container"
+  >
+    <ul
+      className="History"
+    >
+      <li
+        key="0"
+      >
+        <HistoryItem
+          method="POST"
+          url="https//:testur.com"
+        />
+      </li>
+    </ul>
+  </aside>
+</Fragment>
+`;
